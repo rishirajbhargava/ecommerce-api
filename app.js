@@ -17,6 +17,10 @@ const routes = require('./routes/routes');
 
 app.use('/api', routes);
 
+app.get('/', (req, res) => {
+    res.send('API is running... at https://someurl/api');
+});
+
 
 
 app.listen(port, () => {
