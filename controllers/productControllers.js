@@ -1,22 +1,5 @@
 
 const Product = require('../models/Product');
-const path = require('path');
-
-
-
-// Home page
-// route = api/
-// method = GET
-
-const homePage = async (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-}
-
-
-
-
-
-
 
 
 // Get all products
@@ -150,4 +133,4 @@ const deleteProduct = async (req, res) => {
 }
 
 
-module.exports = {homePage, getProducts, newProduct, getSingleProduct, updateProduct , deleteProduct};
+module.exports = { getProducts, newProduct, getSingleProduct, updateProduct , deleteProduct};
